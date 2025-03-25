@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Running Jenkins pipeline for MAIN branch'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application from MAIN branch'
+            }
+        }
+    }
+}
