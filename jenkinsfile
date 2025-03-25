@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Running Jenkins pipeline for MAIN branch'
+                echo 'Running Jenkins pipeline for DEV branch'
             }
         }
-        stage('Deploy') {
+        stage('Test') {
             steps {
-                echo 'Deploying application from MAIN branch'
+                echo 'Running tests for DEV branch'
             }
         }
     }
